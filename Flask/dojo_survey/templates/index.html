@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Test Index</title>
+</head>
+<body>
+	<form action='/results' method='post'>
+	{% with messages = get_flashed_messages()%}
+		{% if messages %}
+			{% for message in messages %}
+				<p>{{message}}</p>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+	<p>
+		Your Name: <input type='text' name='name'>
+	</p>
+	<p>
+		Dojo Loaction: <input type='text' name='location'>
+	</p>
+	<p>
+		Favorite Language: <input type="text" name="language">
+	</p>
+	<p>
+		Comment (optional): <textarea rows="4" name="comment"></textarea>
+	</p>
+		<input type='submit' value='create user'>
+	</form>
+		{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for message in messages %}
+				<p>{{message}}</p>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+</body>
+</html>

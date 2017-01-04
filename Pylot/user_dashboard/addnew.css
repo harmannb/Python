@@ -1,0 +1,39 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	width: 900px;
+
+}
+
+.container h3, a{
+	display: inline;
+}
+
+.container h3{
+	margin: 10px;
+	margin-right: 690px;
+}
+
+.returntodb button{
+	margin-left: 750px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width: 150px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: navy;
+	color: white;
+}
+
+.addnewuser input{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	display: block;
+	width: 100px;
+}
+
+.create button{
+	width: 80px;
+	height: 20px;
+	background-color: green;
+	color: white;
+}

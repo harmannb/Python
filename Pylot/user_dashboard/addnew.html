@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Add New</title>
+	<link rel="stylesheet" type="text/css" href="addnew.css">
+</head>
+<body>
+<div class="container">
+
+<h3>Add a new user</h3>
+
+<a class="logoff" href="/route">Log Off</a>
+
+<form class="returntodb" action="/route">
+	<button type="returntodb">Return to Dashboard</button>
+</form>
+
+ 	<form class="addnewuser" action="/route">
+ 		Email Address: <input type="email" name="email">
+	   	First Name: <input type="text" name="first_name">
+	   	Last Name: <input type="text" name="last_name">
+	    Password: <input type="password" name="password">
+	    Confirm Password: <input type="password" name="pw_confirmation">
+	</form>
+	
+	<form class="create" action="/route">
+		<button type="create">Create</button>
+	</form>
+
+</div>
+</body>
+</html>

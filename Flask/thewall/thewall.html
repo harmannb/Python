@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Wall</title>
+</head>
+<body>
+	<p>
+		Welcome, {{user.first_name}}
+	</p>
+	<form action="/posts" method="post">
+		<label>Post A Message:</label>
+		<textarea name="posttext" rows="8" cols="40"></textarea>
+		<input type="submit" name="submit">
+		</form>
+
+	<a href="/logout"><button type="button" name="button"></button>Logout</a>
+
+
+</body>
+</html>
